@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Membership checkout — Tech Book Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Martian+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="checkout.js" defer></script>
+  </head>
+  <body>
+    <header class="checkout-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark"><i></i><i></i><i></i></span>Tech Book Club</a
+      ><a class="back-link" href="index.html#membership">← Back to plans</a>
+    </header>
+    <main class="checkout-shell">
+      <section class="checkout-intro">
+        <p class="eyebrow">MEMBERSHIP CHECKOUT</p>
+        <h1>Make room for your next great read.</h1>
+        <p>
+          Review your selected membership below. Payment processing has not been
+          connected yet.
+        </p>
+      </section>
+      <section class="checkout-card" aria-labelledby="selected-plan">
+        <div class="checkout-card-head">
+          <div>
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h2 id="selected-plan">Starter membership</h2>
+          </div>
+          <span class="secure-mark">● Secure checkout layout</span>
+        </div>
+        <div class="checkout-total">
+          <span>Membership price</span
+          ><strong id="plan-price">$19 <small>/ month</small></strong>
+        </div>
+        <ul id="plan-benefits">
+          <li>1 book/month</li>
+          <li>Online forums</li>
+        </ul>
+        <div class="payment-notice" role="status">
+          <strong>Payment processing isn't connected.</strong>
+          <p>
+            This is a checkout preview. No payment details are requested or
+            collected, and no payment can be completed on this page.
+          </p>
+        </div>
+        <button class="checkout-button" type="button" disabled>
+          Payment gateway not configured
+        </button>
+        <p class="fine-print">
+          A secure payment provider and valid merchant credentials must be
+          configured before accepting payments.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
